@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FeedbackAnalysis
 =======
 Program wise Analysis : 
@@ -37,4 +36,3 @@ Note : Consider Courses coming from the selected Academic Year, If any perticula
     The structure of array is
     academic year from 2022 to the current year => [courseID => courseName]
 }
->>>>>>> 843e05d (Initial commit)
