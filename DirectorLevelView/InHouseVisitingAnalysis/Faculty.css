@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: #d4e1ff;
+    border-radius: 0px 0px 11px 11px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar .academicYearSelection {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.navbar .academicYearSelection label{
+    font-size: 17px;
+    font-family: math;
+}
+.navbar .academicYearSelection select{
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: none;
+}
+.navbar h1 {
+    color: red;
+    font-size: 30px;
+    font-family: emoji;
+}.navbar h2 {
+    font-family: math;
+    color: #273c4f;
+    font-size: 30px;
+}.navbar p {
+    font-size: 18px;
+    font-family: math;
+    background: #374685;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.inhouseFacultyAnalysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+.visitingFacultyAnalysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.inhouseFacultyAnalysis h3, .visitingFacultyAnalysis h3 {
+    font-family: math;
+    color: #273c4f;
+}
+
+.inhouseFacultyAnalysis table, .visitingFacultyAnalysis table{
+    border-collapse: collapse;
+    border: none;
+}
+.inhouseFacultyAnalysis table thead tr th, .visitingFacultyAnalysis table thead tr th{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: math;
+    background: #ccdfdf;
+    /* text-align: center; */
+}
+
+.inhouseFacultyAnalysis h1, .visitingFacultyAnalysis h1 {
+    font-family: math;
+    font-size: 25px;
+    color: #374685;
+    margin-bottom: 10px;
+}
+
+.inhouseFacultyAnalysis table tbody tr td, .visitingFacultyAnalysis table tbody tr td{
+    padding: 10px 20px;
+    font-family: math;
+    /* text-align: center; */
+}
+.inhouseFacultyAnalysis table tbody tr .course:hover, .visitingFacultyAnalysis table tbody tr .course:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.inhouseFacultyAnalysis table tbody tr .faculty:hover, .visitingFacultyAnalysis table tbody tr .faculty:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inhouseFacultyAnalysis table tbody tr .faculty, 
+.visitingFacultyAnalysis table tbody tr .faculty, 
+.inhouseFacultyAnalysis table tbody tr .course, 
+.visitingFacultyAnalysis table tbody tr .course {
+    text-align: left;
+}
+
+.inhouseFacultyAnalysis table thead tr th:first-child, .visitingFacultyAnalysis table thead tr th:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+.inhouseFacultyAnalysis table thead tr th:last-child, .visitingFacultyAnalysis table thead tr th:last-child {
+    border-radius: 0px 20px 0px 0px;
+}

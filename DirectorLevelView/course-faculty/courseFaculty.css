@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: #d4e1ff;
+    border-radius: 0px 0px 11px 11px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar .academicYearSelection {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.navbar .academicYearSelection label{
+    font-size: 17px;
+    font-family: math;
+}
+.navbar .academicYearSelection select{
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: none;
+}
+.navbar h1 {
+    color: red;
+    font-size: 30px;
+    font-family: emoji;
+}.navbar h2 {
+    font-family: math;
+    color: #273c4f;
+    font-size: 30px;
+}.navbar p {
+    font-size: 18px;
+    font-family: math;
+    background: #374685;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.course-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-container .header h3 {
+    font-family: math;
+    color: #273c4f;
+}
+.course-container .header h1  {
+    font-family: math;
+    font-size: 25px;
+    color: #374685;
+    margin-bottom: 10px;
+}
+
+.course-container .course-details  table, .course-info  table, .faculty-details  table, .faculty-info  table {
+    border-collapse: collapse;
+    border: none;
+}
+
+.course-container .course-details table thead tr th, .course-info table thead tr th, .faculty-details table thead tr th, .faculty-info table thead tr th {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: math;
+    background: #ccdfdf;
+    /* text-align: center; */
+}
+
+.course-container .course-details table tbody tr td, .course-info table tbody tr td, .faculty-details table tbody tr td, .faculty-info table tbody tr td {
+    padding: 10px 20px;
+    font-family: math;
+    /* text-align: center; */
+}
+
+.course-container .faculty-info table tbody tr .course, .course-info table tbody tr .faculty {
+    text-align: left;
+}
+
+.course-container .faculty-info table tbody tr .course:hover, .course-info table tbody tr .faculty:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.course-container .course-details table thead tr th:first-child, .course-info table thead tr th:first-child, .faculty-details table thead tr th:first-child, .faculty-info table thead tr th:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+.course-container .course-details table thead tr th:last-child, .course-info table thead tr th:last-child, .faculty-details table thead tr th:last-child, .faculty-info table thead tr th:last-child {
+    border-radius: 0px 20px 0px 0px;
+}
+
+.course-container .faculty-info .faculty-rating p, .course-info .course-rating p {
+    font-size: 17px;
+    font-family: math;
+    margin-bottom: 20px;
+}
+.course-container .faculty-info .faculty-rating p span, .course-info .course-rating p span {
+    padding: 7px 16px;
+    background: #374685;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+}
+
+.course-container .faculty-info, .course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.course-container .enrolledCourseContainer .feedback-questions-container {
+    display: flex;
+    background: #ecf1ff;
+    width: 70%;
+    justify-content: space-between;
+    padding: 9px 25px;
+    border-radius: 14px;
+    align-items: center;
+    border: 1px solid #ccdfdf;
+    transition: transform 0.5s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-container .enrolledCourseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.course-container .enrolledCourseContainer .details {
+    font-family: math;
+}
+.course-container .enrolledCourseContainer .feedback-questions-container:hover {
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 42px -13px #374685;
+}
+.course-container .enrolledCourseContainer .group-feedback {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+.course-container .enrolledCourseContainer .group-feedback.active {
+    max-height: 100%;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+    
+}
+.course-container .enrolledCourseContainer .feedback-questions-container .details h2 {
+    font-size: 19px;
+}
+.course-container .enrolledCourseContainer .feedback-questions-container .details p {
+    font-size: 14px;
+}
+
+.course-container .enrolledCourseContainer .feedback-questions-container img {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    transform: scaleY(-1);
+    transition: transform 0.5s ease;
+}
+.course-container .enrolledCourseContainer .feedback-questions-container img:hover {
+    background: #bfbfbf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.course-container .enrolledCourseContainer .group-feedback .questions-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.course-container .enrolledCourseContainer .group-feedback .questions-container h1 {
+    font-family: math;
+    font-size: 25px;
+    color: #374685;
+    margin-top: 20px;
+}
+.course-container .enrolledCourseContainer .group-feedback .questions-container table{
+    border: none;
+    border-collapse: collapse;
+    /* text-align: center; */
+}
+.course-container .enrolledCourseContainer .group-feedback .questions-container table thead tr th {
+    padding: 5px 10px;
+    font-family: math;
+    background: #d4e1ff;
+}
+.course-container .enrolledCourseContainer .group-feedback .questions-container table tbody tr td {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.course-container .enrolledCourseContainer .group-feedback .questions-container table tbody tr #question {
+    text-align: justify;
+}
+
+.course-container h1 {
+    font-family: math;
+    font-size: 25px;
+    color: red;
+}

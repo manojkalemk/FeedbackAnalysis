@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-image: url('assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.view-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px;
+    border-radius: 0px 0px 11px 11px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff; 
+}
+
+.navbar #logo {
+    width: 20%;
+}
+
+.view-container #helpimg {
+    width: 60px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    animation: dance 1s ease-in-out infinite, highlight 1s alternate infinite;
+    cursor: pointer;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(10deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+@keyframes highlight {
+    /* 0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        filter: brightness(1);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
+        filter: brightness(1.3);
+    } */
+}
+
+.navbar h2 {
+    font-family: math;
+    color: #273c4f;
+    font-size: 30px;
+}
+
+.navbar p {
+    font-size: 18px;
+    font-family: math;
+    background: #374685;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.home {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    gap: 70px;
+    background: #fff8dccc;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 46px 17px #292b26;
+}
+
+.home .header {
+    width: 50%;
+    padding-right: 20px;
+    border-right: 2px solid white;
+}
+
+.header h1 {
+    font-family: math;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.header p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.home .select-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+    outline: none;
+    animation: borderAnimation 3s infinite, boxShadowAnimation 3s infinite;
+}
+
+.view-container .home .select-container #analysis {
+    padding: 9px 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 20px;
+    font-family: math;
+    border: none;
+    background: #c4161c;
+    color: white;
+    border: 2px solid #c4161c;
+}
+
+.view-container .home .select-container #analysis:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 17px 3px #a05f5f;    ;
+    transition: 0.5s;
+}
+
+/* Border Animation */
+@keyframes borderAnimation {
+    0% {
+        border-color: #007BFF;
+    }
+    25% {
+        border-color: #FF6347;
+    }
+    50% {
+        border-color: #32CD32;
+    }
+    75% {
+        border-color: #FFD700;
+    }
+    100% {
+        border-color: #007BFF;
+    }
+}
+
+/* Box-Shadow Animation */
+@keyframes boxShadowAnimation {
+    0% {
+        box-shadow: 0 0 8px #007BFF;
+    }
+    25% {
+        box-shadow: 0 0 8px #FF6347;
+    }
+    50% {
+        box-shadow: 0 0 8px #32CD32;
+    }
+    75% {
+        box-shadow: 0 0 8px #FFD700;
+    }
+    100% {
+        box-shadow: 0 0 8px #007BFF;
+    }
+}
+
+.custom-select:focus::after {
+    transform: translateY(-50%) rotate(180deg); 
+}
+
+
+.view-container .help {
+    position: absolute;
+    position: absolute;
+    width: 20%;
+    background: white;
+    bottom: 50px;
+    border-radius: 20px;
+    right: 120px;
+    height: 92%;
+    overflow: scroll;
+}
+
+.view-container .help h1 {
+    font-size: 18px;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: math;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.view-container .help h1 #exit {
+    width: 30px;
+    cursor: pointer;
+}
+.view-container .help p {
+    padding: 10px;
+    font-size: 15px;
+    font-family: math;
+    text-align: left;
+}
+
+.view-container .help form {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.view-container .help form label{
+    font-size: 15px;
+    color: gray;
+    font-family: math;
+}
+.view-container .help form .userdetail{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d8d8d8;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: math;
+}
+
+.view-container .help form  .feedback-category {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+.view-container .help form  .feedback-category .checkboxes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+}
+.view-container .help form  .feedback-category .checkboxes #feedback{
+    width: 30px;
+    height: 17px;
+}
+.view-container .help form  .feedback-category .checkboxes label{
+    font-size: 15px;
+}
+
+.view-container .help form textarea {
+    height: 100px;
+    font-family: math;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #d8d8d8;
+    padding: 5px;
+}
+
+.view-container .help button {
+    background: black;
+    color: white;
+    font-family: math;
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.view-container .help::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Webkit-based browsers like Chrome, Safari */
+}

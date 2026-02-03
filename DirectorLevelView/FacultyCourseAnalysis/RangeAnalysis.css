@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: #d4e1ff;
+    border-radius: 0px 0px 11px 11px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar .academicYearSelection {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.navbar .academicYearSelection label{
+    font-size: 17px;
+    font-family: math;
+}
+.navbar .academicYearSelection select{
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: none;
+}
+.navbar h1 {
+    color: red;
+    font-size: 30px;
+    font-family: emoji;
+}.navbar h2 {
+    font-family: math;
+    color: #273c4f;
+    font-size: 30px;
+}.navbar p {
+    font-size: 18px;
+    font-family: math;
+    background: #374685;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.range-container .range-analysis .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.range-container .range-analysis .header h3 {
+    font-family: math;
+    color: #273c4f;
+}
+.range-container .range-analysis .header h1  {
+    font-family: math;
+    font-size: 25px;
+    color: #374685;
+    margin-bottom: 10px;
+}
+.range-container .range-analysis  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.range-container .range-analysis  table {
+    border-collapse: collapse;
+    border: none;
+}
+
+.range-container .range-analysis table thead tr th {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: math;
+    background: #ccdfdf;
+    /* text-align: center; */
+}
+
+.range-container .range-analysis table tbody tr td{
+    padding: 10px 20px;
+    font-family: math;
+    /* text-align: center; */
+    border: 1px solid #ededed;
+}
+
+
+.range-container .range-info table tbody tr .course:hover, .range-info table tbody tr .faculty:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.range-container .range-analysis table thead tr th:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+.range-container .range-analysis table thead tr th:last-child {
+    border-radius: 0px 20px 0px 0px;
+}

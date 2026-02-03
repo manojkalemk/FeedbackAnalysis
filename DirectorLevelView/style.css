@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: #d4e1ff;
+    border-radius: 0px 0px 11px 11px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.container .navbar .academicYearSelection {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.container .navbar .academicYearSelection label{
+    font-size: 17px;
+    font-family: math;
+}
+.container .navbar .academicYearSelection select{
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: none;
+}
+
+.container .navbar h1 {
+    color: red;
+    font-size: 30px;
+    font-family: emoji;
+}
+.container .navbar h2 {
+    font-family: math;
+    color: #273c4f;
+    font-size: 30px;
+}
+.container .navbar p {
+    font-size: 18px;
+    font-family: math;
+    background: #374685;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .info #instituteName {
+    font-family: math;
+    color: #bc0f0f;
+    font-size: 30px;
+}
+
+.container .info #designation {
+    font-size: 20px;
+    font-family: math;
+    font-weight: bold;
+    color: #244562;
+}
+
+.container .info #download {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background: #003667;
+    font-family: math;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+
+.container .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.container .details h2{
+    font-family: math;
+    font-size: 30px;
+    color: #df0000;
+}
+
+.container .details p {
+    font-size: 20px;
+    font-family: math;
+    color: #2f2914;
+    font-weight: 700;
+}
+
+.container .details button {
+    position: absolute;
+    right: 10%;
+    padding: 7px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #b4dff7;
+    font-family: math;
+    font-weight: bold;
+    font-size: 18px;
+    color: #273c4f;
+    cursor: pointer;
+}
+
+.container .programWiseAnalysis .institute-rating p {
+    font-size: 17px;
+    font-family: math;
+}
+.container .programWiseAnalysis .institute-rating p span {
+    padding: 7px 16px;
+    background: #374685;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+}
+
+.container .programWiseAnalysis, .faculty-course-analysis .faculty-analysis, 
+.faculty-course-analysis .course-analysis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+
+.container .programWiseAnalysis #programTable, 
+.faculty-course-analysis .faculty-analysis #facultyTable, 
+.faculty-course-analysis .course-analysis #courseTable{
+    border-collapse: collapse;
+    border: none;
+}
+
+.container .programWiseAnalysis h1, 
+.faculty-course-analysis .faculty-analysis h1, 
+.faculty-course-analysis .course-analysis h1 {
+    font-family: math;
+    font-size: 25px;
+    color: #374685;
+}
+.container .programWiseAnalysis #programTable thead tr th{
+    font-family: math;
+    padding: 7px 14px;
+    font-size: 18px;
+    /* text-align: center; */
+    background: #bae6ff;
+    color: #374685;
+}
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr th, 
+.faculty-course-analysis .course-analysis #courseTable tr th {
+    font-family: math;
+    padding: 7px 14px;
+    font-size: 15px;
+    /* text-align: center; */
+    background: #bae6ff;
+    color: #374685;
+}
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr .range, 
+.faculty-course-analysis .course-analysis #courseTable tr .range {
+    text-align: left;
+}
+
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr .range:hover, 
+.faculty-course-analysis .course-analysis #courseTable tr .range:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr td, 
+.faculty-course-analysis .course-analysis #courseTable tr td {
+    padding: 7px 14px;
+}
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr td, 
+.faculty-course-analysis .course-analysis #courseTable tr td {
+    /* text-align: center; */
+    font-family: math;
+}
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr:first-child th:first-child  {
+    border-radius: 20px 0px 0px 0px;
+}
+.container .faculty-course-analysis .faculty-analysis #facultyTable tr:last-child th:first-child  {
+    border-radius: 0px 0px 0px 20px;
+}
+.container .faculty-course-analysis .course-analysis #courseTable tr:first-child th:first-child  {
+    border-radius: 20px 0px 0px 0px;
+}
+.container .faculty-course-analysis .course-analysis #courseTable tr:last-child th:first-child  {
+    border-radius: 0px 0px 0px 20px;
+}
+
+tbody {
+    background: #edffff;
+}
+.container .programWiseAnalysis #programTable tbody tr td {
+    /* text-align: center; */
+    padding: 5px 10px;
+    font-family: math;  
+    font-size: 17px;
+}
+.container .programWiseAnalysis #programTable tbody tr #programId {
+    text-align: left;
+}
+.container .programWiseAnalysis #programTable tbody tr #programId:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container .programWiseAnalysis #programTable thead tr th:first-child {
+    border-radius: 10px 0px 0px 0px;
+} 
+.container .programWiseAnalysis #programTable thead tr th:last-child {
+    border-radius: 0px 10px 0px 0px;
+} 
+
+.container .faculty-course-analysis {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+
+.container .faculty-course-analysis .faculty-analysis #facultyTable {
+    border-collapse: collapse;
+}
+.container .faculty-course-analysis .course-analysis #courseTable {
+    border-collapse: collapse;
+}
+
+
+
+/* Faculty Tables */
+.container .inhouse-visiting-faculty-analysis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 50px 40px 100px 40px;
+}
+.container .inhouse-visiting-faculty-analysis .header h2{
+    font-family: math;
+    font-family: math;
+    font-size: 1.6em;
+    color: #374685;
+
+}
+.container .inhouse-visiting-faculty-analysis .faculty-type {
+    display: flex;
+    gap: 100px;
+}
+.container .inhouse-visiting-faculty-analysis .faculty-type p{
+    font-family: math;
+    font-size: 20px;
+    background: lightblue;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.container .inhouse-visiting-faculty-analysis .faculty-type p:hover {
+    box-shadow: 0px 0px 30px -14px black;
+}
+
+/* Single Program Styles
+.container .program-container {
+    width: 80%;
+    background: #ebfdfd;
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 0px 70px -18px black;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+.container .program-container .data {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+.container .program-container .data .header h1 {
+    font-family: math;
+}
+.container .program-container .program-analysis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    overflow: scroll;
+}
+.container .program-container .program-analysis table{
+    width: 90%;
+    border-collapse: collapse;
+}
+.container .program-container #close{
+    width: 35px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+.container .program-container #download{
+    width: 25px;
+    position: absolute;
+    right: 20px;
+    background: #214747;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+} */

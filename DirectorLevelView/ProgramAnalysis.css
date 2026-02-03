@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.program-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: #d4e1ff;
+    border-radius: 0px 0px 11px 11px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.program-container .navbar .academicYearSelection {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.program-container .navbar .academicYearSelection label{
+    font-size: 17px;
+    font-family: math;
+}
+.program-container .navbar .academicYearSelection select{
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: none;
+}
+
+.program-container .navbar h1 {
+    color: red;
+    font-size: 30px;
+    font-family: emoji;
+}
+.program-container .navbar h2 {
+    font-family: math;
+    color: #273c4f;
+    font-size: 30px;
+}
+.program-container .navbar p {
+    font-size: 18px;
+    font-family: math;
+    background: #374685;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.program-container .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.program-container .data .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program-container .data .header h3 {
+    font-family: math;
+    color: #273c4f;
+}
+.program-container .data .header h1{
+    font-family: math;
+    margin-top: 20px;
+    color: #374685;
+}
+
+.program-container .data .program-analysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.program-container .data .program-analysis table{
+    border-collapse: collapse;
+    border: none;
+}
+.program-container .data .program-analysis table thead tr th{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: math;
+    background: #ccdfdf;
+    text-align: center;
+}
+
+.program-container .data .program-analysis h1 {
+    font-family: math;
+    font-size: 25px;
+    color: #374685;
+    margin-bottom: 10px;
+}
+
+.program-container .data .program-analysis table tbody tr td {
+    padding: 10px 20px;
+    font-family: math;
+    /* text-align: center; */
+}
+.program-container .data .program-analysis table tbody tr .course, .program-container .data .program-analysis table tbody tr .faculty {
+    text-align: left;
+}
+
+.program-container .data .program-analysis table tbody tr .course:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.program-container .data .program-analysis table tbody tr .faculty:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.program-container .data .program-analysis table thead tr th:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+.program-container .data .program-analysis table thead tr th:last-child {
+    border-radius: 0px 20px 0px 0px;
+}
+
+.program-container .data .program-rating p {
+    font-size: 17px;
+    font-family: math;
+}
+.program-container .data .program-rating p span {
+    padding: 7px 16px;
+    background: #374685;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+}
